@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${kantumruyPro.className} ${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-         <div className=" bg-[#ffffff]">
+         <div className=" bg-[#ffffff] border-b border-black">
         <div className="max-w-screen-2xl py-2 mx-auto px-5 sm:px-10 xl:px-20 flex items-center">
           <a
             href="/"

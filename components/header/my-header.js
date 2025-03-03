@@ -8,7 +8,7 @@ const MyHeader = () => {
   const pathName = usePathname();
 
   return (
-    <div className="hidden lg:block">
+    <div className="hidden lg:block ">
       <ul className="flex space-x-2 text-black ">
         <li
           className={`text-base px-4 ${
