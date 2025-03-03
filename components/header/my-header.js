@@ -48,12 +48,12 @@ const MyHeader = () => {
         </li>
         <li
           className={`text-base px-4  ${
-            pathName === "/tefl"
+            pathName === "https://tefluk.com/partners/ecc-cambodia"
               ? "text-primary font-semibold underline underline-offset-4"
               : "hover:underline hover:text-[#34448c] hover:cursor-pointer hover:underline-offset-4"
           }`}
         >
-          <Link href="/tefl">TEFl</Link>
+          <Link href="https://tefluk.com/partners/ecc-cambodia">TEFl</Link>
         </li>
         <li
           className={`text-base px-4  ${
@@ -75,12 +75,12 @@ const MyHeader = () => {
         </li>
         <li
           className={`text-base px-4  ${
-            pathName === "/ecc-thailand"
+            pathName === "https://eccthailand.org/"
               ? "text-primary font-semibold underline underline-offset-4"
               : "hover:underline hover:text-[#34448c] hover:cursor-pointer hover:underline-offset-4"
           }`}
         >
-          <Link href="/ecc-thailand">ECC Thailand</Link>
+          <Link href="https://eccthailand.org/">ECC Thailand</Link>
         </li>
         <li>
           <Link

@@ -8,13 +8,13 @@ import MyHeroSection from "./components/my-hero-section";
 const page = () => {
   return (
     <div>
-      <Card className="relative w-full rounded-none py-0 aspect-[16/9] md:aspect-[21/9]">
+      <Card className="relative w-full rounded-none py-0 aspect-[16/9] md:aspect-[21/8]">
         <Image
           src="/assets/images/slide4.png"
           alt="image"
           width={2100}
           height={900}
-          className="w-full h-full object-cover aspect-[16/9] md:aspect-[21/9]"
+          className="w-full h-full object-cover aspect-[16/9] md:aspect-[21/8]"
           priority
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start text-white mx-auto md:mx-0 md:p-10 space-y-1 md:space-y-3 text-center md:text-left max-w-[90%] md:max-w-[60%] lg:max-w-[50%]">
@@ -31,7 +31,7 @@ const page = () => {
 
           <Link
             href="/apply"
-            className="px-2  sm:px-4 sm:py-2 text-center bg-[#34448c] hover:bg-[#394eae] border-2 border-[#ffffff] text-white text-[10px] sm:text-base md:text-lg shadow-[4px_4px_0px_0px_rgb(215,90,89)] transition duration-200"
+             className="flex items-center justify-center px-4 text-lg py-2 text-primary-foreground  bg-primary rounded-md gap-x-1 font-bold active:bg-gray-900 md:inline-flex hover:shadow-none shadow-[5px_5px_0px_0px_rgba(1,1,1)] hover:translate-x-1 hover:translate-y-1 transition-all duration-300"
           >
             Apply Here
           </Link>
