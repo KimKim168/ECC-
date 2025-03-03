@@ -1,6 +1,14 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import MyHeader from "@/components/header/my-header";
+import MyMenuHeader from "@/components/header/my-menu-header";
+import Image from "next/image";
+import { Kantumruy_Pro } from "next/font/google";
 
+const kantumruyPro = Kantumruy_Pro({
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  subsets: ["khmer"],
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,9 +28,52 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${kantumruyPro.className} ${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        {children}
+         <div className=" bg-[#ffffff]">
+        <div className="max-w-screen-2xl py-2 mx-auto px-5 sm:px-10 xl:px-20 flex items-center">
+          <a
+            href="/"
+            className="flex-1 flex gap-2 items-center text-base  md:text-xl lg:text-xl text-white text-center"
+          >
+            <Image
+              src="/assets/images/logo.png"
+              width={90}
+              height={90}
+              alt="logo"
+              className="w-16 h-16 md:w-20 md:h-20"
+            />
+          </a>
+          <MyHeader />
+          <MyMenuHeader />
+        </div>
+    </div>
+        <div className="min-h-screen" >{children}</div>
+        <footer className="text-sm leading-6 mt-8 px-4">
+      <div className="py-2  border-t border-gray-300 items-center flex flex-col-reverse  sm:flex-row justify-between text-gray-900">
+        {/* Left Side: Copyright & Policy */}
+        <div className="flex flex-col mt-3 md:mt-0 sm:flex-row sm:items-center sm:space-x-4">
+          <p>ECC CAMBODIA Non Profit Organization©2025</p>
+        </div>
+
+        {/* Right Side: Social Icons */}
+        <div className="flex mt-4 sm:mt-0 space-x-6 text-gray-400">
+          <a href="#" className="hover:text-gray-600">
+            <span className="sr-only">facebook</span>
+            <Image src='/assets/images/facebook.png' width={40} height={40} alt="image"/>
+          </a>
+          <a href="#" className="hover:text-gray-600">
+            <span className="sr-only">instagram</span>
+            <Image src='/assets/images/instagram.png' width={40} height={40} alt="image"/>
+          </a>
+          <a href="#" className="hover:text-gray-600">
+            <span className="sr-only">feed</span>
+            <Image src='/assets/images/social.png' width={40} height={40} alt="image"/>
+          </a>
+        
+        </div>
+      </div>
+    </footer>
       </body>
     </html>
   );

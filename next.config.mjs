@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        remotePatterns: [
+          {
+             hostname: "example.com",
+             hostname: "firebasestorage.googleapis.com",
+          },
+        ],
+      },
+};
 
 export default nextConfig;
