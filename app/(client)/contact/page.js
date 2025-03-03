@@ -6,7 +6,7 @@ const page = () => {
   return (
     <section className="mx-auto max-w-screen-xl px-6 py-16" id="contact">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Get in Touch</h2>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Contact</h2>
         <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
           We are always ready to support you.
         </p>
