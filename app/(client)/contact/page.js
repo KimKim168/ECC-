@@ -17,9 +17,9 @@ const page = () => {
         <div className="space-y-6">
           {[ 
             { title: "Mail", details: ["info@ecccambodia.org"], image: "/assets/images/letter.png" },
-            { title: "Address", details: ["GMK Bulvarı No:140, Çankaya/ANKARA"], image: "/assets/images/google-maps.png" },
+            { title: "Address", details: ["Road 63 Po Village, Krung Siem Reap 3735"], image: "/assets/images/google-maps.png" },
             { title: "Contact", details: ["Phone: +855 12 335 043", "Fax: +44 7512 091 873"], image: "/assets/images/phone.png" },
-            { title: "Working Hours", details: ["Monday - Friday: 08:00 - 17:00", "Sunday: 7:30 - 11:10"], image: "/assets/images/time.png" },
+            { title: "Working Hours", details: ["Monday - Friday: 07:30 - 18:00", "Sunday: 7:30 - 11:10"], image: "/assets/images/time.png" },
           ].map((item, index) => (
             <div key={index} className="flex items-center p-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
               <div className="flex-shrink-0 p-3 bg-[#34448c] rounded-lg">
